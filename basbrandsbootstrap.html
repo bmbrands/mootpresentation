@@ -1,0 +1,391 @@
+<!DOCTYPE HTML>
+<!-- <html lang="en-US"> -->
+<html lang="en-US" class="fade">
+<!-- 
+  ^ a class of "fade" makes slides fade smoothly into one another
+ -->
+<!-- <html lang="en-US" class="nonumbers"> -->
+<!-- 
+  If you want no numbers on the slides add a "nonumbers" class 
+  to the HTML element.
+  Adding a class of "fade" will make slides fade into another. 
+-->
+<head>
+  <meta charset="UTF-8">
+  <title>Theming and creating content for multi device support</title>
+<!-- 
+  If you upload your slides to the web, ensure that you have 
+  a good title - this shows up in search results and social
+  media links
+ -->
+  <meta name="viewport" content="width=device-width, user-scalable=yes">
+  <link rel="stylesheet" href="themes/mozilla/styles/style.css">
+
+</head>
+<body class="list">
+  <header class="caption">
+    <h1>Theming and creating content for multi device support</h1>
+    <p class="footer">
+      Dressing for success in a Multi-Device World<br> 
+      Twitter: <a href="http://twitter.com/basbrands">@basbrands</a><br>
+      Email: <a href="mailto:bas@sonsbeekmedia.nl">bas@sonsbeekmedia.nl</a>
+    </p>
+  </header>
+  <aside class="talkdescription">
+    <p>
+      This Talk is about Bootstrap, Moodle and using theme to create great themes and learning content.
+    <p>
+    <button onclick="goFullScreen()">Go fullscreen</button></p>
+    <p class="abstract">
+      <strong>Abstract: </strong>
+      During the Ireland and UK Moodle Moot 2013 Hackfest the Bootstrap framework was discussed and the integration of a Moodle Bootstrap theme into Moodle core started. Since Moodle version 2.5 the Bootstrap framework is part of Moodle core and can be used for creating themes, plugins and content.
+    <br><br>
+      The first part of this presentation will show some examples of Bootstrap themes with different approaches to multi-device support.
+    <br><br>
+      The second part will show how the bootstrap framework can be used when creating plugins.
+      The last part will show how teachers and course creators with some basic html knowledge can create interactive and attractive content using Bootstrap markup.
+    </p>
+  </aside>
+
+<!-- 
+    Simply copy the whole block for each slide you want.
+  Special slides get extra classes. Each slide needs an ID 
+  to allow for bookmarking and target jumping.
+-->
+
+  <div id="firstslide" class="slide shout"><div>
+    <section>
+      <header>
+        <h2>Moodle + Bootstrap</h2>
+      </header>
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>  
+
+  <div id="cover" class="slide"><div>
+    <section>
+      <header>
+        <h1>I'm a developer, designer and fulltime geek. </h1>
+      </header>
+      <img src="pictures/bbrands/bas.jpg" 
+           class="middle shadow" height="300"
+           alt="Bas Brands">
+      <small class="byline">
+        Bas Brands, MoodleMoot, Edinburgh, 2014
+      </small>
+      <footer class="notes">
+        I am a Freelance Moodle developer, Webdesigner, Plugin developer, Linux specialist and Fulltime geek. 
+      </footer>
+    </section>
+  </div></div>
+
+
+  <div id="incommon" class="slide cover w"><div>
+    <section>
+      <header>
+        <h2>What do we all have in common?</h2>
+      </header>
+      <img src="pictures/bbrands/people-mobile.jpg" 
+           class="middle" 
+           alt="Firefox OS phones">
+      <small class="credits">
+          <a href="http://www.flickr.com/photos/7682132@N05/9913956096/">Photo Credit: d_vdm</a> <a href="https://creativecommons.org/licenses/by-sa/2.0/">cc</a>
+        
+      </small>
+      <footer class="notes">
+        We don't simply own phones, we own advanced computers that the Geeks of the 80's never
+        could have dreamed of. We carry them in our pockets and our phones know everything about us, our friends, where we are, where we have been. They contain powerfull sensors and high resolution screens. And above all we almost never leave home without one. 
+      </footer>
+    </section>
+  </div></div>
+
+<!-- end slide block -->
+
+  <div id="callout" class="slide"><div>
+    <section>
+      <header>
+        <h2>You interact differently on each device</h2>
+      </header>
+      <ul>
+        <li>Your read texts on your mobile while traveling.</li>
+        <li>You write on you laptop.</li>
+        <li>You watch youtube on your tablet.</li>
+        <li>You game using the oculus rift.</li>
+      </ul>
+      <footer class="notes">
+
+        What fits perfectly in one place, doesn’t necessarily fit somewhere else.
+
+      </footer>
+    </section>
+  </div></div> 
+
+  <div id="yourmoodle" class="slide"><div>
+    <section>
+      <header>
+        <h2>Who are your learners?</h2>
+      </header>
+      <ul>
+        <li>Do your users own a smartphone?</li>
+        <li>Have they ever used social media?</li>
+        <li>Do they take pictures?</li>
+        <li>Do use a phone for reading?</li>
+        <li>Can they whatch videos?</li>
+      </ul>
+      <footer class="notes">
+        The answers to these questions are probably: Yes, Yes, Yes, Yes, Yes.
+      </footer>
+    </section>
+  </div></div>  
+
+  <div id="oneline" class="slide oneline"><div>
+    <section>
+      <header>
+        <h2>Your LMS is being used on all devices.</h2>
+      </header>
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div> 
+
+    <div id="pinch" class="slide"><div>
+    <section>
+      <header>
+        <h2>But the results are not always a success</h2>
+      </header>
+      <img src="pictures/bbrands/pinch.png" 
+           class="right" 
+           alt="A sample picture of a Moodle login page in the Old days">
+
+      <ul>
+        <li>Pinching and Zooming</li>
+        <li>Clicking tiny links</li>
+        <li>Hard to read</li>
+      </ul>     
+
+      <footer class="notes">
+        Most Themes will work on a Mobile but the user experience is often not that good. Users have to pinch and zoom to access content. Modern website look more like apps.
+      </footer>
+    </section>
+  </div></div>
+
+    <div id="simple" class="slide"><div>
+    <section>
+      <header>
+        <h2>Choosing the right theme is a step forward</h2>
+      </header>
+      <img src="pictures/bbrands/simplelogin.png" 
+           class="right" 
+           alt="A sample picture of Moodles login page with Bootstrap">
+
+      <ul>
+        <li>No Zoom</li>
+        <li>Focus on most important element</li>
+        <li>Easy to read</li>
+      </ul>     
+
+      <footer class="notes">
+        Responsive theme reorder how content is displayed on your mobile. Mobile themes are smart themes using new webdisgn techniques targeted for the screensize or device type.
+      </footer>
+    </section>
+  </div></div>
+
+
+  <div id="fat" class="slide cover w"><div>
+    <section>
+      <header>
+        <h2>Somebody had a great idea</h2>
+      </header>
+      <img src="pictures/bbrands/fat.png" 
+           class="middle" 
+           alt="Fat">
+      <small class="credits">
+          Picture of @fat on twitter
+        
+      </small>
+      <footer class="notes">
+        Met @fat, together with @mdo (an a whole lot of other developers) he developed the The Twitter Bootstrap CSS framework, Which is simply called Bootstrap nowadays.
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="imagesinfo" class="slide"><div>
+    <section>
+      <header>
+        <h2>Bootstrap and the Moodle bootstrap theme</h2>
+      </header>
+      <ul>
+        <li>The Bootstrap theme was build by @fat and @mdo</li>
+        <li>Me and David Scotson developed it with the help of many others</li>
+        <li>Then it got adopted into Moodle core</li>
+        <li>And now it's going to be the default for Moodle</li>
+      </ul>
+      <footer class="notes">
+        Bootstrap is not the only CSS framework out there, but is definately the most popular framework with many site using it and many ways of customizing it.
+      </footer>
+    </section>
+  </div></div>
+
+    <div id="meetbootstrap" class="slide oneline"><div>
+    <section>
+      <header>
+        <h2>Meet Bootstrap.</h2>
+      </header>
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div> 
+
+  <div id="bootstrapcss" class="slide cover w"><div>
+    <section>
+      <header>
+        <h2>Bootstrap CSS</h2>
+      </header>
+      <img src="pictures/bbrands/bselements.png" 
+           class="middle" 
+           alt="Bootstrap CSS">
+      <small class="credits">
+        <a href="http://www.basbrands.nl">
+          Image by Bas Brands
+        </a>
+      </small>
+      <footer class="notes">
+        Bootstrap provides styling for commonly used page elements like buttons, tables, forms, labels, images and more.
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="bootstrapjs" class="slide cover w"><div>
+    <section>
+      <header>
+        <h2>Bootstrap JavaScript</h2>
+      </header>
+      <img src="pictures/bbrands/bsjavascript.png" 
+           class="middle" 
+           alt="Bootstrap Javascript">
+      <small class="credits">
+        <a href="http://www.basbrands.nl">
+          Image by Bas Brands
+        </a>
+      </small>
+      <footer class="notes">
+        Bootstrap uses jQuery as it's main JavaScript library, all bootstrap's JavaScript elements are provided in separate small JS files for Modal Panels, Tabs, Tooltips, Image Sliders, Collapsible items and more. 
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="howimplemented" class="slide oneline"><div>
+    <section>
+      <header>
+        <h2>Bootstrap -> Moodle?</h2>
+      </header>
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div> 
+
+ v
+
+  <div id="todos" class="slide"><div>
+    <section>
+      <header>
+        <h2>Okay maybe not, a team was needed</h2>
+      </header>
+      <img src="pictures/bbrands/octobiwan.png" width="400px"
+           class="right" 
+           alt="Obiwan">
+
+      <ul>
+        <li>Developers</li>
+        <li>Testers</li>
+        <li>Tracker integration processes</li>
+        <li>Friends</li>
+        <li>Reviewers</li>
+        <li>And the awesome platform github</li>
+      </ul>     
+
+      <small class="credits">
+        <a href="https://octodex.github.com/octobiwan/">
+          Github Octodex
+        </a>
+      </small>
+      <footer class="notes">
+        Introduce yourself, who you are and why you are the person to give that talk
+      </footer>
+    </section>
+  </div></div>
+
+
+  <div id="themeselector" class="slide cover w"><div>
+    <section>
+      <header>
+        <h2>Moodle now in Core from version 2.5</h2>
+      </header>
+      <img src="pictures/bbrands/themeselector.png" 
+           class="left" 
+           alt="The Moodle theme selector">
+
+      <footer class="notes">
+        Moodle core contains 2 new themes from version 2.5 onwards. The bootstrapbase theme which serves as a parent theme and the Clean theme which works as it's client. The Moodle Bootstrap theme was never designed to be pretty, it was designed to be clever and a great tool to base your future themes on.
+      </footer>
+    </section>
+  </div></div>
+
+
+  <div id="fun" class="slide"><div>
+    <section>
+      <header>
+        <h2>On to Bootstrap 3</h2>
+      </header>
+      <img src="pictures/bbrands/bootstrap3.png" width="200px"
+           class="right" 
+           alt="Obiwan">
+
+      <ul>
+        <li>Super powered grid</li>
+        <li>Better box model</li>
+        <li>Rewritten Javascript</li>
+        <li>Glyphicons Icon font</li>
+        <li>New navbar</li>
+        <li>New components</li>
+      </ul>     
+
+      <small class="credits">
+        <a href="https://octodex.github.com/octobiwan/">
+          Github Octodex
+        </a>
+      </small>
+      <footer class="notes">
+        Bootstrap 3 was released august 13th with lots of new features. A new Moodle theme is in the making using the new Bootstrap 3 framework. This time we are far more experienced and are rewriting lots of Core css and using many renderers. Where it will take us? Who knows but is a hell of a ride!
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="nowwhat" class="slide cover w"><div>
+    <section>
+      <header>
+        <h2>So now what?</h2>
+      </header>
+      <img src="pictures/bbrands/cat-ipad2.jpg" 
+           class="left" 
+           alt="The Moodle theme selector">
+      <small class="credits">
+        <a href="http://www.flickr.com/photos/21503901@N05/5380882279/">Photo Credit: tulensrma</a> 
+      </small>
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+ 
+
+  <!--
+    To hide progress bar from entire presentation
+    just remove “progress” element.
+    -->
+  <div class="progress"><div></div></div>
+  <script src="scripts/script.js"></script>
+  <!-- Copyright © 2010–2012 Vadim Makeev — pepelsbey.net -->
+</body>
+</html>
