@@ -409,7 +409,8 @@ blockquote .quotesource {
 	text-shadow:0 1px 1px #000;
 	}
 	.list .caption h1 {
-		font:bold 50px/1 'OpenSansRegular', sans-serif;
+		font:bold 50px/1 'bree_rgregular', sans-serif;
+		max-width: 80%;
 		}
 	.list .caption a {
 		color:#fff;
@@ -712,7 +713,8 @@ ul.inline li:last-child::after {
 	margin: 1em 0;
 	font-size: 14px;
 	background: rgba(0,0,0, .7);
-	padding: .5em;
+	padding: 1.5em;
+	border-radius: 5px;
 }
 
 /* 	Animations */
