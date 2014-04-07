@@ -88,8 +88,8 @@
       <header>
         <h2>You interact differently on each device</h2>
       </header>
-      <ul>
-        <li>Your read texts on your mobile while traveling.</li>
+      <ul class="inner">
+        <li class="active">Your read texts on your mobile while traveling.</li>
         <li>You write on you laptop.</li>
         <li>You watch youtube on your tablet.</li>
         <li>You game using the oculus rift.</li>
@@ -107,8 +107,8 @@
       <header>
         <h2>Who are your learners?</h2>
       </header>
-      <ul>
-        <li>Do your users own a smartphone?</li>
+      <ul class="inner">
+        <li class="active">Do your users own a smartphone?</li>
         <li>Have they ever used social media?</li>
         <li>Do they take pictures?</li>
         <li>Do use a phone for reading?</li>
@@ -139,8 +139,8 @@
            class="right" 
            alt="A sample picture of a Moodle login page in the Old days">
 
-      <ul>
-        <li>Pinching and Zooming</li>
+      <ul class="inner">
+        <li class="active">Pinching and Zooming</li>
         <li>Clicking tiny links</li>
         <li>Hard to read</li>
       </ul>     
@@ -160,8 +160,8 @@
            class="right" 
            alt="A sample picture of Moodles login page with Bootstrap">
 
-      <ul>
-        <li>No Zoom</li>
+      <ul class="inner">
+        <li class="active">No Zoom</li>
         <li>Focus on most important element</li>
         <li>Easy to read</li>
       </ul>     
@@ -195,8 +195,8 @@
       <header>
         <h2>Bootstrap and the Moodle bootstrap theme</h2>
       </header>
-      <ul>
-        <li>The Bootstrap theme was build by @fat and @mdo</li>
+      <ul class="inner">
+        <li class="active">The Bootstrap theme was build by @fat and @mdo</li>
         <li>Me and David Scotson developed it with the help of many others</li>
         <li>Then it got adopted into Moodle core</li>
         <li>And now it's going to be the default for Moodle</li>
@@ -259,6 +259,7 @@
         <h2>Bootstrap -> Moodle?</h2>
       </header>
       <footer class="notes">
+        So Bootstrap is this awesome framework, but Moodle has been around for quite a while and uses it's own styles / grid. How was this merged?
       </footer>
     </section>
   </div></div> 
@@ -291,13 +292,11 @@
            class="right" 
            alt="Obiwan">
 
-      <ul>
-        <li>Developers</li>
+      <ul class="inner">
+        <li class="active">Developers</li>
         <li>Testers</li>
-        <li>Tracker integration processes</li>
-        <li>Friends</li>
-        <li>Reviewers</li>
-        <li>And the awesome platform github</li>
+        <li>Users</li>
+        <li>Github</li>
       </ul>     
 
       <small class="credits">
@@ -334,9 +333,9 @@
         
       </header>
       <h3>City University London</h3><br>
-      <p><strong>A few Lessons learned:</strong> The next few slides show a mix of theme mockups and actual theme screenshots. Using Images for courses was cool but hard to maintain. Docking needed to be fixed and access to the settings and navigation menus were moved to the navbar.</p>
 
       <footer class="notes">
+        <strong>A few Lessons learned:</strong> The next few slides show a mix of theme mockups and actual theme screenshots. Using Images for courses was cool but hard to maintain. Docking needed to be fixed and access to the settings and navigation menus were moved to the navbar.
       </footer>
     </section>
   </div></div> 
@@ -433,8 +432,8 @@
         
       </header>
       <h3>King Faisal University / Shabaka Training</h3><br>
-      <p><strong>A few Lessons learned:</strong> Right to left languages are very hard to master in theming. Designing a desktop version first and then a mobile version can work but the common mindset is to try and have every element on a mobile screen.</p>
       <footer class="notes">
+        <strong>A few Lessons learned:</strong> Right to left languages are very hard to master in theming. Designing a desktop version first and then a mobile version can work but the common mindset is to try and have every element on a mobile screen.
       </footer>
     </section>
   </div></div> 
@@ -492,14 +491,14 @@
   <div id="fun" class="slide"><div>
     <section>
       <header>
-        <h2>On to Bootstrap 3</h2>
+        <h2>What's new in Bootstrap 3?</h2>
       </header>
       <img src="pictures/bbrands/bootstrap3.png" width="200px"
            class="right" 
-           alt="Obiwan">
+           alt="Bootstrap 3">
 
-      <ul>
-        <li>Mobile first</li>
+      <ul class="inner">
+        <li class="active">Mobile first</li>
         <li>Super powered grid</li>
         <li>Better box model</li>
         <li>Rewritten Javascript</li>
@@ -519,6 +518,29 @@
     </section>
   </div></div>
 
+  <div id="moodlebootstraptheme" class="slide"><div>
+    <section>
+      <header>
+        <h2>Theme Moodle bootstrap, what's new?</h2>
+      </header>
+      <img src="pictures/bbrands/moodlebootstraptheme.png"
+           class="right" 
+           alt="Moodle bootstrap theme">
+
+      <ul class="inner">
+        <li class="active">Rewritten from Bootstrap 2</li>
+        <li>Flexible Grid</li>
+        <li>Fluid / Fixed</li>
+        <li>Compiled using Grunt</li>
+        <li>Easy to compile</li>
+        <li>Bootswatches</li>
+      </ul>     
+      <footer class="notes">
+        The Moodle Bootstrap theme is available on Github. It is still bleeding edge technology but we are nearing a first stable release. This theme uses many of the new Bootstrap3 features and we focus on improving core Moodle and providing easy tools for customization.
+      </footer>
+    </section>
+  </div></div>
+
   <div id="swatches1" class="slide cover h"><div>
     <section>
       <header>
@@ -526,10 +548,10 @@
       </header>
       <img src="pictures/bbrands/swatch1.png"
            class="right" 
-           alt="Obiwan">   
+           alt="Bootswatches Amelia and Cerulean">   
 
       <footer class="notes">
-        Using bootswatches it's easy to style a theme. You can even customize the theme icons with just one command line option.
+        Using bootswatches it's easy to style a theme. The Amelia and Cerulean themes have been ported from Bootstrap version 2. Basically a Bootswatch contains 2 files, one containing all colour, sizes and positioning (the variables) and one that overrides standard bootstrap styling (the bootwatch). When these are compiled they are not added to the theme, the override the theme.
       </footer>
     </section>
   </div></div>
@@ -541,10 +563,10 @@
       </header>
       <img src="pictures/bbrands/swatch2.png"
            class="right" 
-           alt="Obiwan">   
+           alt="Bootwatches Darky and Flaty">   
 
       <footer class="notes">
-        Using bootswatches it's easy to style a theme. You can even customize the theme icons with just one command line option.
+        In the development process of Bootstrap3 it has proven to be very helpful to test with Bootswatches to see if the Moodle theme we have created complies with the Bootstrap way of using variables and Bootswatches.
       </footer>
     </section>
   </div></div>
@@ -556,10 +578,10 @@
       </header>
       <img src="pictures/bbrands/swatch3.png"
            class="right" 
-           alt="Obiwan">   
+           alt="Bootswatches Lumen and Superhero">   
 
       <footer class="notes">
-        Using bootswatches it's easy to style a theme. You can even customize the theme icons with just one command line option.
+        For Bootstrap 3 new bootwatches are available.
       </footer>
     </section>
   </div></div>
@@ -571,10 +593,10 @@
       </header>
       <img src="pictures/bbrands/swatch4.png"
            class="right" 
-           alt="Obiwan">   
+           alt="Bootwatches Cupid and Shamrock">   
 
       <footer class="notes">
-        Using bootswatches it's easy to style a theme. You can even customize the theme icons with just one command line option.
+        Sometimes, On special events, fun bootwatches are released. Cupid was released for valentines day, Shamrock was released for Saint Patricks day.
       </footer>
     </section>
   </div></div>
@@ -582,7 +604,7 @@
   <div id="nowwhat" class="slide cover w"><div>
     <section>
       <header>
-        <h2>So now what?</h2>
+        <h2>Beyond theming: Multi Device plugins</h2>
       </header>
       <img src="pictures/bbrands/cat-ipad2.jpg" 
            class="left" 
@@ -591,7 +613,206 @@
         <a href="http://www.flickr.com/photos/21503901@N05/5380882279/">Photo Credit: tulensrma</a> 
       </small>
       <footer class="notes">
-        Focus on device usage by cats
+        Focus on device usage by cats.
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="responsiveplugins" class="slide"><div>
+    <section>
+      <header>
+        <h2>Multi Device plugins</h2>
+      </header>
+
+
+      <ul class="inner">
+        <li class="active">The webvideo activity</li>
+        <li>The html5video filter</li>
+        <li>future: responsive images filter</li>
+      </ul>     
+      <footer class="notes">
+        Our devices do more that display webpages. Since th
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="webvideo" class="slide"><div>
+    <section>
+      <header>
+        <h2>The webvideo activity</h2>
+      </header>
+      <img src="pictures/bbrands/webvideo.png"
+           class="right" 
+           alt="Moodle bootstrap theme">
+
+      <ul class="inner">
+        <li class="active">Easily add video's to page</li>
+        <li>Prevent loading Youtube / Vimeo JS on page load</li>
+        <li>Shows in page or in overlay panel</li>
+      </ul>     
+      <footer class="notes">
+        The Moodle Bootstrap theme is available on Github. It is still bleeding edge technology but we are nearing a first stable release. This theme uses many of the new Bootstrap3 features and we focus on improving core Moodle and providing easy tools for customization.
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="webvideo-inaction" class="slide cover w"><div>
+    <section>
+      <header>
+        <h2>The webvideo Activity</h2>
+      </header>
+      <img src="pictures/bbrands/webvideo-inaction.png"
+           class="right" 
+           alt="Plugin webvideo in action">   
+
+      <footer class="notes">
+        The webvideo plugin can pupop a Modal (from bootstrap) that shows the video you added to it.
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="html5video" class="slide"><div>
+    <section>
+      <header>
+        <h2>The html5video filter</h2>
+      </header>
+      <img src="pictures/bbrands/html5video.png"
+           class="right" 
+           alt="Moodle bootstrap theme">
+
+      <ul class="inner">
+        <li class="active">Upload vidoes in a Moodle course</li>
+        <li>Plays on iOs devices</li>
+      </ul>     
+      <footer class="notes">
+        The Moodle Bootstrap theme is available on Github. It is still bleeding edge technology but we are nearing a first stable release. This theme uses many of the new Bootstrap3 features and we focus on improving core Moodle and providing easy tools for customization.
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="html5video-inaction" class="slide cover w"><div>
+    <section>
+      <header>
+        <h2>The webvideo Activity</h2>
+      </header>
+      <img src="pictures/bbrands/html5video-inaction.png"
+           class="right" 
+           alt="Plugin webvideo in action">   
+
+      <footer class="notes">
+        The webvideo plugin can pupop a Modal (from bootstrap) that shows the video you added to it.
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="responsive images" class="slide cover h"><div>
+    <section>
+      <header>
+        <h2>The responsive images filter</h2>
+      </header>
+      <img src="pictures/bbrands/busbig.png"
+           class="right" 
+           alt="Moodle bootstrap theme">
+
+      <small class="credits">
+      <a href="http://www.flickr.com/photos/49503154222@N01/7103718541/"> Photo Credit:  marcoderksen</a>  
+    </small>
+      <footer class="notes">
+        The Moodle Bootstrap theme is available on Github. It is still bleeding edge technology but we are nearing a first stable release. This theme uses many of the new Bootstrap3 features and we focus on improving core Moodle and providing easy tools for customization.
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="forteachers" class="slide oneline"><div>
+    <section>
+      <header>
+        <h2>Now for the teachers.</h2>
+      </header>
+      <footer class="notes">
+        I how from this presentation you have learned Bootstrap is a great framework for connecting developers with designers. If they both understand Bootstrap the results can be amazing. In Moodle you can allow your teachers to get the most out of a Bootstrap theme, just by some simple configuration in your TinyMCE editor settings.
+      </footer>
+    </section>
+  </div></div> 
+
+    <div id="tinymcestyleselect" class="slide cover w"><div>
+    <section>
+      <header>
+        <h2>Tiny MCE Menubar</h2>
+      </header>
+      <img src="pictures/bbrands/styleselect.png"
+           class="right" 
+           alt="TinyMCE Style Selector">   
+
+      <footer class="notes">
+        Add the word styleselect to get access to the Tiny MCE styleselector.
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="tinymceeditorconfig" class="slide cover w"><div>
+    <section>
+      <header>
+        <h2>Tiny MCE Styles</h2>
+      </header>
+      <img src="pictures/bbrands/editorconfig.png"
+           class="right" 
+           alt="TinyMCE Editor config">   
+
+      <footer class="notes">
+        Use this special markup to add custom styles to TinyMCE.
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="tinymceeditorconfig" class="slide cover w"><div>
+    <section>
+      <header>
+        <h2>Tiny MCE Labels</h2>
+      </header>
+      <img src="pictures/bbrands/tinymce.png"
+           class="right" 
+           alt="TinyMCE Editor config">   
+
+      <footer class="notes">
+        With these custom styles you can use Bootstrap CSS in your content! This example just shows labels, It could easily be expanded to allow usage of panels, buttons or even the JavaScript features like carrousels or dropdowns.
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="becreative" class="slide cover w"><div>
+    <section>
+      <header>
+        <h2>Thank you!</h2>
+      </header>
+      <img src="pictures/bbrands/thankyou.jpg" 
+           class="middle" 
+           alt="Sonsbeekpark">
+      <small class="credits">
+          <a href="https://www.flickr.com/photos/31149081@N02/7761213134/">Photo Credit: Bas Boerman</a> <a href="https://creativecommons.org/licenses/by-sa/2.0/">cc</a>
+        
+      </small>
+      <footer class="notes">
+        There is so much more to tell about Mobile learning, Multi Device content, the tricky bits and the cool bits. One thing I am sure of: Moodle has taken on a great tool for design, development and usability by choosing Bootstrap to be the foundation of future themes. There are many creative projects online linked to Bootstrap from which some might prove very valuable to Moodle. I hope this presentation inspired you to think about your Multi Device strategy and I wish to thank all that have contributed to Bootstrap!
+      </footer>
+    </section>
+  </div></div>
+
+    <div id="contacttwitter" class="slide"><div>
+    <section>
+      <header>
+        <h2>Contact me: @twitter basbrands</h2>
+      </header>
+      <figure class="middle shadow frame swing">
+      <img src="pictures/bbrands/twitter.jpg" width="300px"
+           alt="Twitter">
+      </figure>
+      <small class="credits">
+        <a href="https://www.flickr.com/photos/bas-boerman/12100660965/">
+          Image by Bas Boerman
+        </a>
+      </small>
+      <footer class="notes">
+        Contact me on twitter, by email or on Moodle.org
       </footer>
     </section>
   </div></div>
