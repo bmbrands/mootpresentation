@@ -717,6 +717,14 @@ ul.inline li:last-child::after {
 	border-radius: 5px;
 }
 
+.navigation {
+	position: absolute;
+	bottom: 10px;
+}
+
+.navigation.next {
+	right: 20px;
+}
 /* 	Animations */
 
 .smoothdemo {
